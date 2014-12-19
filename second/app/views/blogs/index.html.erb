@@ -1,0 +1,59 @@
+<% if @latestPost.blank? %>
+  <%= "No blog posts exist at this time." %>
+<% else %>
+<style>
+.blogimg{
+  background: url(<%= @latestPost.image %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+
+
+  <div class="narrow">
+    <div class="large-12 columns content">
+      <% if flash[:notice] %>
+        <div data-alert class="alert-box success radius content">
+          <%= notice %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div data-alert class="alert-box alert radius content">
+            <%= alert %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+<div class="blogimg">
+<div class="blogoverlay">
+  <div class="row">
+    <div class="large-12 columns text-left content">
+      <div class="margin10t">
+        <h1 class="blogtitle whitetextsmall3"><%= @latestPost.title %><span class="blogdate"><%= @latestPost.created_at.to_date.to_formatted_s(:short) %></span></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-9 columns text-left content">
+      <p class="font09 whitetextsmall3"><%= truncate(@latestPost.content, :length => 550, :separator => ' ') %> <span class="readmore"><%= link_to 'Read More', blog_path(@latestPost) %></span></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="padding2t">
+<% @blogPosts.each do |post| %>
+  <div class="row padding15v lightcontainer">
+  	<div class="large-9 columns text-left content2">
+      <h2 class="blogheader"><%= link_to post.title, blog_path(post) %><span class="blogdate"><%= post.created_at.to_date.to_formatted_s(:short) %></span></h2>
+      <p class="blogdesc"><%= truncate(post.content, :length => 400, :separator => ' ') %><span class="readmorewhite"><%= link_to 'Read More', blog_path(post) %></span></p>
+    </div>
+  </div>
+<% end %>
+<% end %>
+</div>

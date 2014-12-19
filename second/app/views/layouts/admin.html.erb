@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="row">
+    <div class="large-6 columns content text-left">
+      <p class="topbartext">Support Contact: 0845 676 9114</p>
+    </div>
+    <div class="large-6 columns content text-right">
+      <p class="topbartext"><a href="http://www.besleyandcopp.co.uk/">besley &amp; copp</a> website</p>
+    </div>
+  </div>
+</div>
+
+<div class="headercontainer">
+  <div class="row lineheight0" data-equalizer>
+    <div class="icon-bar five-up">
+      <a class="item" href="<%= %>" data-equalizer-watch>
+        <label>-</label>
+      </a>
+      <a class="item" href=" <%= admin_blog_path %>" data-equalizer-watch>
+        <label>Manage Blog</label>
+      </a>
+      <a class="item selected" href="<%= root_path %>" data-equalizer-watch>
+        <%= image_tag("panellogo.png") %>
+      </a>
+      <a class="item" href="<%= admin_helpdesk_path %>" data-equalizer-watch>
+        <label>Manage Helpdesk</label>
+      </a>
+      <a class="item" href="/panel/statistics" data-equalizer-watch>
+        <label>-</label>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row lightcontainer">
+  <div class="large-12 columns content">
+    <%= yield %>
+  </div>
+</div>
+
+    <script src="assets/javascripts/application.js"></script></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<div class="row pinkcontainer content2">
+	<div class="large-12 columns text-left padding2v">
+		<h1 class="white weight100">Helpdesk</h1>
+	</div>
+</div>
+
+<div class="row featuredbg padding2v content">
+	<h3 class="weight100 font13 content2">Getting started? Here's some guides you might like</h3>
+	<% @featuredone.each do |guide| %>
+		<div class="large-3 columns text-center content">
+			<div class="guidebutton padding2v">
+				<h4 class="weight100 font11">How to find your product</h4>
+			</div>
+		</div>
+	<% end %>
+</div>
+
+<div class="row lightcontainer padding2v content">
+	<div class="large-8 columns content">
+	<h3 class="weight100 font13 margin1b">Not going as planned? Here's some guides that might help</h3>
+	<% @featuredtwo.each do |guide| %>
+		<div class="guidebutton padding05v margin1b content">
+			<h4 class="weight100 font1 margin0b margin0t">How to find your product</h4>
+		</div>
+	<% end %>
+	</div>
+	<div class="large-4 columns">
+	<h3 class="weight100 font13 margin1b">Recent Guides</h3>
+
+	<% @recent.each do |guide| %>
+		<div class="guidebutton padding05v margin1b content">
+			<h4 class="weight100 font1 margin0b margin0t"><%= guide.title %></h4>
+		</div>
+	<% end %>
+	</div>
+</div>
+
+<div class="row featuredbg content2">
+	<div class="large-12 columns text-center padding2v">
+		<h3 class="white weight100">search</h3>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+<style>
+.showblogimg{
+  background: url(<%= @blogPost.image %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+
+<div class="showblogimg">
+<div class="blogoverlay">
+  <div class="row">
+    <div class="large-12 columns text-left content">
+      <div class="margin10t">
+        <h1 class="whitetextsmall3 blogtitle inlineblock"><%== @blogPost.title %></h1><h4 class="whitetextsmall3 blogdate inlineblock"><%= @blogPost.created_at.to_date.to_formatted_s(:long) %></h4>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row lightcontainer blogcontent">
+  <div class="large-12 columns text-left black">
+    <div class="margin4v blogtext darkgrey">
+      <p class="blogtext"><%== @blogPost.content %>
+      </p>
+    </div>
+  </div>
+</div>

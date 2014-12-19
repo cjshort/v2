@@ -1,0 +1,12 @@
+<div class="padding2v content">
+	<%= form_for @guide do |guide| %>
+	    <%= guide.text_field :title, :placeholder => "Title" %>
+	    <%= guide.text_area :content, :placeholder => "Content", class: "height20" %>
+	    <%= guide.text_field :youtube, :placeholder => "Youtube URL" %>
+	    <%= guide.label "Getting started featured row" %>
+        <%= guide.select :featuredone, [['Active', true], ['Inactive', false]] %>
+        <%= guide.label "Something went wrong featured column" %>
+        <%= guide.select :featuredtwo, [['Active', true], ['Inactive', false]] %>
+	    <%= guide.submit %>
+	<% end %>
+</div>
