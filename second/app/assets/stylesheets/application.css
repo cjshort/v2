@@ -957,6 +957,8 @@ box-shadow: inset 0px -13px 73px -24px rgba(0,0,0,0.75);
 {
   background-image:url(http://www.besleyandcopp.co.uk/esupply/img/leisurebackground.jpg)
 }
+
+
 .defaultbackground
 {
   background:#412f4f;
@@ -965,9 +967,10 @@ box-shadow: inset 0px -13px 73px -24px rgba(0,0,0,0.75);
   background:-webkit-linear-gradient(45deg,#412f4f 0,#e04f7e 100%);
   background:-o-linear-gradient(45deg,#412f4f 0,#e04f7e 100%);
   background:-ms-linear-gradient(45deg,#412f4f 0,#e04f7e 100%);
-  background:linear-gradient(45deg,#412f4fe 0,#e04f7e 100%);
+  background:linear-gradient(45deg,#412f4f 0,#e04f7e 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#412f4f', endColorstr='#e04f7e', GradientType=1)
 }
+
 .pageheaderpanel
 {
   background:#ececec;
