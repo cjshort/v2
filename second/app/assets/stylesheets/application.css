@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ .italic{
+  font-style: italic;
+ }
+
 .blogoverlay{
   background: rgba(77, 77, 77, 0.63);
 }
@@ -343,6 +347,10 @@ box-shadow: inset 0px -13px 73px -24px rgba(0,0,0,0.75);
 
 .padding2v{
   padding: 2em 0;
+}
+
+.padding3v{
+  padding: 3em 0;
 }
 
 .padding5v{

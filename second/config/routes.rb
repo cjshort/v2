@@ -22,10 +22,11 @@ Rails.application.routes.draw do
   resources :blogs
   
   get 'fronts/index'
-
   get 'fronts/features'
-
   get 'fronts/getstarted'
+  get 'fronts/casestudybosch'
+  get 'fronts/casestudythebestof'
+  get 'fronts/casestudyservicemaster'
 
   devise_for :admins
   root 'fronts#index'

@@ -7,4 +7,13 @@ class FrontsController < ApplicationController
 
   def getstarted
   end
+
+  def casestudyservicemaster
+  end
+
+  def casestudybosch
+  end
+
+  def casestudythebestof
+  end
 end

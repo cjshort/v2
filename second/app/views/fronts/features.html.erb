@@ -1,19 +1,31 @@
 
 
-<div class="row featuresgradient featuresborderbottom" data-equalizer>
-  <div class="large-6 columns content" data-equalizer-watch>
+<div class="row featuresgradient featuresborderbottom">
+  <div class="large-6 columns content row1">
     <h3 class="margin3v thin content font2"><span class="regular">Centralising, simplifying <span class="mli">&amp;</span> securing</span> your print across your entire organisation</h3>
   </div>
-  <div class="large-6 columns featuresmac" data-equalizer-watch>
+  <div class="large-6 columns featuresmac row1">
   </div>
 </div>
 
 
-<div class="row featuresgradient" data-equilizer>
-  <div class="large-6 columns content text-center" data-equilizer-watch>
-    <%= image_tag("customisationpreview.png", class: "margin3v") %>
+<div class="row featuresgradient padding3v">
+  <div class="large-6 columns content text-center">
+    <%= image_tag("customisationpreview.png") %>
   </div>
-  <div class="large-6 columns" data-equilizer-watch>
+  <div class="large-6 columns content2">
+    <h3 class="italic weight100">What does your brand say?</h3>
+    <p class="weight100">text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph v text paragraph</p>
+  </div>
+</div>
+
+<div class="row featuresgradient padding3v">
+  <div class="large-6 columns content text-center">
+    <%= image_tag("customisationpreview.png") %>
+  </div>
+  <div class="large-6 columns">
+    <h3 class="weight100 italic">This is a title</h3>
+    <p>text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph v text paragraph</p>
   </div>
 </div>
 
@@ -21,3 +33,11 @@
 <div class="row lightcontainer">
   <p class="margin2v"></p>
 </div>
+
+<script type="text/javascript">
+    (function() {
+        $(function() {
+           $('.row1').matchHeight();
+          });
+    })();
+</script>
